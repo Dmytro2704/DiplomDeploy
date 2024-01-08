@@ -1,0 +1,75 @@
+{% extends 'farm/base.html' %}
+{%load static%}
+{% block content %}
+    <h2>Купити</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <h2>Оберіть категорію:</h2>
+        <select name="category" id="category">
+            {% for category in categories %}
+                <option value="{{ category.id }}">{{ category.name }}</option>
+            {% endfor %}
+        </select>
+           <input type="submit" value="Підтвердити категорію">
+        <br><br>
+    </form>
+
+    {% if selected_products %}
+        <form method="POST">
+            {% csrf_token %}
+            <h2>Оберіть товар:</h2>
+            <select name="product" id="product">
+                {% for product in selected_products %}
+                    <option value="{{ product.id }}">{{ product.name }} - {{ product.price }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <label for="quantity">Кількість:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+            <br><br>
+             <h2>Оберіть локацію для доставки:</h2>
+        <select name="location" id="location">
+            <option value="location1">Дніпро</option>
+            <option value="location2">Павлоград</option>
+            <option value="location3">Новомосковськ</option>
+        </select>
+        <br><br>
+            <input type="submit" value="Підрахувати">
+            <input type="submit" name="decline_delivery" value="Сам заберу!">
+        </form>
+    {% endif %}
+
+{% if selected_product %}
+    <h2>Ваше замовлення:</h2>
+    <p>Обраний товар: {{ selected_product.name }}</p>
+    <p>Кількість: {{ quantity }}</p>
+    <p>Ціна товару: {{ product_price }}</p>
+    {% if location and delivery_cost %}
+        <p>Доставка у:
+            {% for key, value in location_dict.items %}
+                {% if key == location %}
+                    {{ value }}
+                {% endif %}
+            {% endfor %}
+        </p>
+        <p>Вартість доставки: {{ delivery_cost }}</p>
+    {% endif %}
+    <p>Загальна вартість: {{ total_cost }}</p>
+
+    <form method="POST" id="Order" action="{% url 'order_success' order_id=order_id %}">
+        {% csrf_token %}
+        {{ order_confirmation_form.confirm_order }}
+        <button type="submit">Підтверджую</button>
+    </form>
+
+
+
+
+
+{% endif %}
+
+
+
+
+
+{%endblock%}

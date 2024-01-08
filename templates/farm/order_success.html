@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%extends 'farm/base.html' %}
+ {%load static%}
+  {% block content %}
+
+    <meta charset="UTF-8">
+    <title>Створено замовлення</title>
+
+    <h2>Вітаю {{ order.user }}, ваше замовлення прийняте ! </h2>
+    <h2>Номер замовлення № {{ order.order_id }}.</h2>
+    <p>Обраний товар: {{ order.product }}</p>
+    <p>Кількість: {{ order.quantity }}</p>
+    <p>Ціна товару: {{ order.product_price }}</p>
+    {% if delivery_cost != 0 %}
+
+        <p>Вартість доставки: {{ order.delivery_cost }}</p>
+    {% endif %}
+    <p>Загальна вартість: {{ order.total_cost }}</p>
+<hr>
+<p>Дякуємо за замовлення, наш менеджер зв'яжеться з Вами протягом 30 хвилин</p>
+
+
+{%endblock%}

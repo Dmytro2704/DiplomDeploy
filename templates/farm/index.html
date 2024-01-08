@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+{%extends 'farm/base.html' %}
+ {%load static%}
+ {% block content %}
+      <!-- banner -->
+      <section class="banner_main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <div class="text-bg">
+                     <h1>Знаменівська ферма</h1>
+                     <p>Натуральні продукти смачніщі!</p>
+                     <a href="{% url 'about' %}">Дізнатися</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- three_box -->
+      <div class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <figure><img src="{% static 'farm/images/img1.jpg'%}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <figure><img src="{% static 'farm/images/img2.jpg'%}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <figure><img src="{% static 'farm/images/img3.jpg'%}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- three_box -->
+      <!-- hottest -->
+      <div  class="hottest">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="titlepage">
+                     <h2>Нові враження від<br>звичних страв</h2>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="hottest_box">
+                     <p>– Органічне виробництво – це сучасне і високотехнологічне виробництво, ретельно продумані процеси, щоб не нашкодити ні природі , ні людині, дбайливий догляд за тваринами. Це кардинально інший підхід. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <!-- end hottest -->
+      <!-- choose  section -->
+      <div class="choose ">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="titlepage">
+                     <h2>Чому ми? </h2>
+                     <p>«Ми використовуємо тільки власну сировину, виробництво якої контролюємо на всіх етапах. Сконцентрувалися на важливих для споживача якостях: смак, емоційність. Так і з'явився новий бренд. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                  <div class="padding_with">
+                     <div class="row">
+                        <div class="col-md-6 padding_bottom">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon1.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Родюча земля</h3>
+                                 <p>Ферма знаходиться між озером і лісом  </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 padding_bottom">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon2.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Екологічність</h3>
+                                 <p>До найближчого міста 35 км.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 padding_bottom2">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon3.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Якість</h3>
+                                 <p>Використвуємо тільки власну сировину</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon4.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Фахівці</h3>
+                                 <p>Люди працюють на фермі родинами і люблять свій край</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                  <div class="choose_img">
+                     <figure><img src="{% static 'farm/images/food.jpg'%}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5">
+                  <a class="read_more" href="{% url 'products' %}">Продукти</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- end choose  section -->
+      <!-- product  section -->
+      <div class="product">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_left0">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product1.jpg'%}" alt="#"/></figure>
+                     <h3 class="black">Овочі</h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product2.jpg'%}" alt="#"/></figure>
+                     <h3 >Борошно</h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 padding_right0">
+<!--                  <div class="product_box">-->
+<!--                     <figure><img src="{% static 'farm/images/product3.jpg'%}" alt="#"/></figure>-->
+<!--                     <h3>Фрукти</h3>-->
+<!--                  </div>-->
+               </div>
+               <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 padding_left0">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product4.jpg'%}" alt="#"/></figure>
+                     <h3>Соняшникова Олія</h3>
+                  </div>
+               </div>
+               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 padding_right0">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product5.jpg'%}" alt="#"/></figure>
+                     <h3>Баранина</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end product  section -->
+      <!-- about -->
+      <div class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Люди про нас:</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide about_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="test_box">
+                                          <i><img src="{% static 'farm/images/men1.jpeg'%}" class="rounded-circle" alt="#"/></i>
+                                          <h4>Влад Буханка</h4>
+                                          <p>«В нас це крутий, сучасний і корисний продукт. Ми майже три роки розробляли рецептуру та дизайн упаковки, щоб таким начебто простим та звичним продуктом здивувати навіть тих, хто дуже прискіпливо підходить до їжі».</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="test_box">
+                                          <i><img src="{% static 'farm/images/femen.jpeg'%}"  class="rounded-circle" alt="#"/></i>
+                                          <h4>Катерина Зернятко</h4>
+                                          <p>Готуючи на фермерській олії, я завжди переношуся подумки в своє дитинство, згадую зустрічи з бабусею, ії добру посмішку.  </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="test_box">
+                                          <i><img src="{% static 'farm/images/men2.jpeg'%}" class="rounded-circle" alt="#"/></i>
+                                          <h4>Микола Гулько</h4>
+                                          <p>Власне, продукти пропонують з доставкою, але ми з родиною зазвичай приїзжаємо на ферму самі. Тут гарно і затишно, дітям подобається бути на природі, раз на два тижні їздимо.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Попередня</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Наступна</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+
+
+{%endblock%}
+

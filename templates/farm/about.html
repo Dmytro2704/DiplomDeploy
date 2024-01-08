@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{%extends 'farm/base.html' %}
+ {%load static%}
+  {% block content %}
+<!-- choose  section -->
+      <div class="choose ">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="titlepage">
+                     <h2>Чому ми? </h2>
+                     <p>«Ми використовуємо тільки власну сировину, виробництво якої контролюємо на всіх етапах. Сконцентрувалися на важливих для споживача якостях: смак, емоційність. Так і з'явився новий бренд. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                  <div class="padding_with">
+                     <div class="row">
+                        <div class="col-md-6 padding_bottom">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon1.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Родюча земля</h3>
+                                 <p>Ферма знаходиться між озером і лісом  </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 padding_bottom">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon2.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Екологічність</h3>
+                                 <p>До найближчого міста 35 км.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 padding_bottom2">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon3.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Якість</h3>
+                                 <p>Використвуємо тільки власну сировину</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="choose_box">
+                              <i><img src="{% static 'farm/images/icon4.png'%}" alt="#"/></i>
+                              <div class="choose_text">
+                                 <h3>Фахівці</h3>
+                                 <p>Люди працюють на фермі родинами і люблять свій край</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                  <div class="choose_img">
+                     <figure><img src="{% static 'farm/images/food.jpg'%}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5">
+                  <a class="read_more" href="{% url 'products' %}">Продукти</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- end choose  section -->
+
+<h2> Вирощування органічних продуктів, як правило, є кращим для навколишнього середовища, ніж звичайні методи землеробства,
+   оскільки відсутність синтетичних пестицидів зменшує забруднення грунту та прилеглих водних шляхів, водночас підвищуючи родючість грунту
+   та зберігаючи воду. Не кажучи вже про те, що органічні ферми зазвичай споживають менше енергії, ніж неорганічні.
+     Споживати достатньо свіжих (чи заморожених) овочів та фруктів, важливіше, ніж те, органічна їжа чи ні.
+   Органічні продукти можуть зменшити негативний вплив пестицидів, що може бути більш корисним для здоров’я.
+   Вони можуть містити більше поживних речовин та мати кращий смак, але це також може залежати від того,
+   чи купуєте ви місцеві та сезонні овочі та фрукти.</h2>
+      <!-- about -->
+      <div class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Люди про нас:</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide about_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="test_box">
+                                          <i><img src="{% static 'farm/images/men1.jpeg'%}" class="rounded-circle" alt="#"/></i>
+                                          <h4>Влад Буханка</h4>
+                                          <p>«В нас це крутий, сучасний і корисний продукт. Ми майже три роки розробляли рецептуру та дизайн упаковки, щоб таким начебто простим та звичним продуктом здивувати навіть тих, хто дуже прискіпливо підходить до їжі».</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="test_box">
+                                          <i><img src="{% static 'farm/images/femen.jpeg'%}"  class="rounded-circle" alt="#"/></i>
+                                          <h4>Катерина Зернятко</h4>
+                                          <p>Готуючи на фермерській олії, я завжди переношуся подумки в своє дитинство, згадую зустрічи з бабусею, ії добру посмішку.  </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="test_box">
+                                          <i><img src="{% static 'farm/images/men2.jpeg'%}" class="rounded-circle" alt="#"/></i>
+                                          <h4>Микола Гулько</h4>
+                                          <p>Власне, продукти пропонують з доставкою, але ми з родиною зазвичай приїзжаємо на ферму самі. Тут гарно і затишно, дітям подобається бути на природі, раз на два тижні їздимо.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Попередня</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Наступна</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+
+{%endblock%}

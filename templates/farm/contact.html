@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%extends 'farm/base.html' %}
+{% block content %}
+ {%load static%}
+<h2>Контакти</h2>
+<ul>
+ <li>с. Знаменівка, вул. Дерюгіна, 92</li>
+ <li>телефон 0679586445</li>
+ <li>farm@gmail.com</li>
+
+</ul>
+
+<img src="{% static 'farm/images/loc_contact.png'%}"   alt="#"/>
+<!--<form method="post">-->
+<!--    {% csrf_token %}-->
+<!--    {{ form.as_p }}-->
+<!--    <button type="submit">Register</button>-->
+<!--</form>-->
+
+{%endblock%}
+

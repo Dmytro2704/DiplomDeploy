@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{%extends 'farm/base.html' %}
+{% block content %}
+ {%load static%}
+<h2>Регістрація</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if error_message %}
+    <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+    <button type="submit">Підтвердити</button>
+</form>
+
+{%endblock%}
+

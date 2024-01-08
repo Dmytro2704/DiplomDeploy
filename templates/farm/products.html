@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{%extends 'farm/base.html' %}
+
+{% block content %}
+ {%load static%}
+     <!-- product  section -->
+      <div class="product">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_left0">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product1.jpg'%}" alt="#"/></figure>
+                     <h3 class="black">Овочі</h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product2.jpg'%}" alt="#"/></figure>
+                     <h3 >Борошно</h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 padding_right0">
+<!--                  <div class="product_box">-->
+<!--                     <figure><img src="{% static 'farm/images/product3.jpg'%}" alt="#"/></figure>-->
+<!--                     <h3>Фрукти</h3>-->
+<!--                  </div>-->
+               </div>
+               <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 padding_left0">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product4.jpg'%}" alt="#"/></figure>
+                     <h3>Соняшникова Олія</h3>
+                  </div>
+               </div>
+               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 padding_right0">
+                  <div class="product_box">
+                     <figure><img src="{% static 'farm/images/product5.jpg'%}" alt="#"/></figure>
+                     <h3>Баранина</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end product  section -->
+
+{%endblock%}
