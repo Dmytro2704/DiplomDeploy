@@ -15,7 +15,7 @@ class UserProfile(models.Model):
     password = models.CharField(max_length=150, verbose_name="Password")
     email = models.EmailField(max_length=100, verbose_name="Email")
     phone = models.CharField(max_length=20, verbose_name="Phone")
-    date_of_birth = models.CharField(max_length=30,verbose_name="Date of birth")
+    date_of_birth = models.DateTimeField(verbose_name="Date of birth")
     location = models.CharField(max_length=100, choices=LOCATION_CHOICES, verbose_name="Location")
     no_delivery = models.BooleanField(default=False)
 
